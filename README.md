@@ -1,2 +1,2 @@
 token de git 
-PUBLIC
+PUBLIC for al
