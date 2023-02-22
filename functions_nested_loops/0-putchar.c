@@ -6,8 +6,11 @@
  * Return 0.
  */
 
+int x;
+#include "main.h"
+
 int main(void)
 {
-	printf("%c _putchar\n");
+	puts (_putchar ());
 	return (0);
 }
