@@ -7,28 +7,27 @@
  */
 void times_table(void)
 {
-	int filas, colunas, d;
+	int rone, cone, d;
 
-	for (filas = 0; filas <= 9; filas++)
+	for (rone = 0; rone <= 9; rone++)
 	{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		for (colunas = 1; colunas <= 9; colunas++)
+		for (cone = 1; cone <= 9; cone++)
 		{
-			d = (filas * colunas);
+			d = (rone * cone);
 			if ((d / 10) > 0)
 			{
 				_putchar((d / 10) + '0');
-
 			}
 			else
 			{
 				_putchar(' ');
 			}
-			-putchar((d % 10) + '0');
+			_putchar((d % 10) + '0');
 
-			if (colunas < 9)
+			if (cone < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -36,4 +35,5 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
+
 }
