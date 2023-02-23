@@ -15,5 +15,6 @@ int add(int one, int two);
 void print_to_98(int n);
 int _isupper(int c);
 int _isdigit(int c);
+int mul(int a, int b);
 
 #endif
