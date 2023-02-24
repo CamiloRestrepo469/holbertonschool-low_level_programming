@@ -1,23 +1,18 @@
 #include "main.h"
 
 /**
- * print_most_numbers - entry point
+ * print_most_numbers - function to print nums
  *
- * Description: Prints the numbers with _putchar
- *
- * Return: void
+ * Return: Always 0.
  */
-
 void print_most_numbers(void)
 {
-	int number;
+	int a;
 
-	for (number = '0'; number <= '9'; number++)
+	for (a = 0; a <= 9; a++)
 	{
-		if (number == '2' || number == '4')
-			;
-		else
-			_putchar(number);
+		if (a != 2 && a != 4)
+			_putchar(a + '0');
 	}
 	_putchar('\n');
 }
