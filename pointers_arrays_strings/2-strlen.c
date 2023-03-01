@@ -5,12 +5,15 @@
  *  the length of a string
  *  @s: save values add
  *
- *  Return: return the i a string
+ *  Return: 0.
  */
 
 int _strlen(char *s)
 {
-char i;
-i = strlen(s);
+int i, l=0;
+for (i=0; s[i] != '\0'; i++)
+{
+l++
+}	
 return (i);
 }
