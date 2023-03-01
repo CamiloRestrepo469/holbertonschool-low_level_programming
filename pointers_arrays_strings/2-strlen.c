@@ -5,7 +5,7 @@
  *  the length of a string
  *  @s: save values add
  *
- *  Return: 0.
+ *  Return: return the i a string
  */
 
 int _strlen(char *s)
