@@ -1,14 +1,12 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * strcat - unction appends the src
-  string to the dest string,
- * @dest: A pointer to the string to be concatenated upon.
- * @src: The source string  appended to @dest.
- *
- * Return: A pointer to the destination string @dest.
- */
+*_strcat - Write a function that concatenates two strings.
+*
+*@dest: This is the output dest
+*@src: This is the input source
+*
+* Return: This return to dest, that concatenates two strings
+*/
 char *_strcat(char *dest, char *src)
 {
 int i, j;
@@ -16,9 +14,8 @@ for (i = 0; dest[i] != '\0'; i++)
 ;
 for (j = 0; src[j] != '\0'; j++)
 {
-dest[i] = dest[j];
+dest[i] = src[j];
 i++;
 }
-dest[i] = '\0';
 return (dest);
 }

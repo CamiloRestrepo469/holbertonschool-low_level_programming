@@ -1,31 +1,28 @@
-#include "main.h"
-#include <stdio.h>
 /**
- * _strspn - Gets the length of a prefix substring.
- * @s: The string to be searched.
- * @accept: The prefix to be measured.
- *
- * Return: The number of bytes in s which
- *         consist only of bytes from accept.
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int b = 0;
-int i;
-
-while (*s)
+int i, k, existe;
+int count = 0;
+for (i = 0; s[i] != '\0'; i++)
 {
-for (i = 0; accept[i]; i++)
+existe = 0;
+for (k = 0; accept[k] != '\0'; k++)
 {
-if (*s == accept[i])
+if (accept[k] == s[i])
 {
-b++;
-break;
+count++;
+existe = 1;
 }
-else if (accept[i + 1] == '\0')
-return (b);
 }
-s++;
+if (existe == 0)
+{
+return (count);
 }
-return (b);
+}
+return (count);
 }
